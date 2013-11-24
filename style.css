@@ -1,0 +1,68 @@
+body
+{
+	background: url(img/cardboard_flat.png);
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 20px;
+	background-color: #242423;
+	text-align: center;
+}
+/*************search form style **************/
+.search_form{
+	padding:10px;
+}
+
+.search input{
+	width: 800px;
+	padding:10px;
+}
+
+.search .submit_button{
+	width:200px;
+	padding:10px;
+	background: silver;
+}
+.search .submit_button:hover{
+	background: orange;
+}
+/*************DATA style **************/
+.wrapper, #chart_table, #chart_div{
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+}
+#chart_table{
+	padding-top: 20px;
+}
+#chart_table, #chart_table table{
+	width:1000px;
+	text-align: center;
+}
+#chart_table td{
+	width: 33.33%;
+	padding:10px;
+}
+#chart_table tr:first-child{
+	font-size:1em;
+	font-weight: bold;
+}
+.highlight{
+	background: silver;
+}
+.wrapper{
+	background: white;
+	width:1200px;
+	text-align: center;
+	border-radius: 10px;
+	moz-border-radius:10px;	
+}
+.important_info{
+	padding:20px;
+	font-size: 1.5em;
+	font-weight: bolder;
+	font-style: italic;
+	color: red;
+
+}
