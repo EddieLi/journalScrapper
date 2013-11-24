@@ -82,14 +82,18 @@
 
 			preg_match($this->doi_reg,$this->html,$doi_matches);
 
-			$doi_number = trim($doi_matches[0]);
+			if(count($doi_matches)>0){
+				$doi_number = trim($doi_matches[0]);
+			}else{
+				$doi_number = 'N/A';
+			}
 
 			return $doi_number;
 		}
 
 		public function printWordsFrequencyTable(){
 			//Display table
-			
+
 			$table = "<table>";
 			$table .="<tr class='highlight'>";
 			$table .="<td>No.</td>";

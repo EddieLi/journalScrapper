@@ -55,14 +55,17 @@ used by API class to obtain more information associated with the doi number.
 			//get doi number in order to request information from the API
 			$doi_number = $Scrapper->getDOI();
 
-			//Instantialize API with given doi number
-			$API = new API($doi_number);
+			if ($doi_number != "N/A"){
+				//Instantialize API with given doi number
+				$API = new API($doi_number);
 
-			$doi_score = $API->getScore();
-			$doi_normalized_score = $API->getNormalizedScore();
-			$doi_title = $API->getTitle();
-			$doi_fullCitation = $API->getFullCitation();
-			$doi_year = $API->getYear();
+				$doi_score = $API->getScore();
+				$doi_normalized_score = $API->getNormalizedScore();
+				$doi_title = $API->getTitle();
+				$doi_fullCitation = $API->getFullCitation();
+				$doi_year = $API->getYear();
+			}
+			
 		}
 
 	}else{
