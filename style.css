@@ -1,3 +1,4 @@
+/************Global**********************/
 body
 {
 	background: url(img/cardboard_flat.png);
@@ -7,6 +8,13 @@ body
 	line-height: 20px;
 	background-color: #242423;
 	text-align: center;
+}
+h1{
+	color:red;
+	font-style: italic;
+}
+p{
+	font-size: 1.1em;
 }
 /*************search form style **************/
 .search_form{
@@ -27,24 +35,31 @@ body
 	background: orange;
 }
 /*************DATA style **************/
-.wrapper, #chart_table, #chart_div{
+.wrapper, #chart_table_wrapper, #chart_div_wrapper{
 	position: relative;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom: 10px;
 }
-#chart_table{
-	padding-top: 20px;
+#chart_table_wrapper{
+	padding: 20px 0;
 }
-#chart_table, #chart_table table{
+.text-wrapper{
+	width: 1000px;
+	margin-right: auto;
+	margin-left:auto;
+}
+table{
 	width:1000px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
-#chart_table td{
+td{
 	width: 33.33%;
 	padding:10px;
 }
-#chart_table tr:first-child{
+tr:first-child{
 	font-size:1em;
 	font-weight: bold;
 }
@@ -56,13 +71,31 @@ body
 	width:1200px;
 	text-align: center;
 	border-radius: 10px;
-	moz-border-radius:10px;	
+	moz-border-radius:10px;
+	margin-top:25px;	
+	box-shadow: 2px 2px grey;
+	moz-box-shadow: 2px 2px grey;
 }
-.important_info{
+#important_info_wrapper{
 	padding:20px;
-	font-size: 1.5em;
-	font-weight: bolder;
-	font-style: italic;
-	color: red;
 
+}
+
+/*******toggles*******/
+.important_info, .chart_table, .chart_div, .examples{
+	position: relative;
+	top: -17px;
+	font-size: 1.1em;
+	background: orangered;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	border-radius: 10px;
+}
+#examples_wrapper{
+	display: none;
+}
+.examples{
+	margin-top:20px;
 }
