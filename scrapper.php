@@ -65,7 +65,6 @@ used by API class to obtain more information associated with the doi number.
 				$doi_fullCitation = $API->getFullCitation();
 				$doi_year = $API->getYear();
 			}
-			
 		}
 
 	}else{

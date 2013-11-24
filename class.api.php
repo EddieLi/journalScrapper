@@ -31,7 +31,6 @@
 			
 			//Get the first element inside the JSON, which contains all the information we need
 			$this->api_data_object = $doi_information[0];
-
 		}
 
 		public function setDOINum($doi_num){

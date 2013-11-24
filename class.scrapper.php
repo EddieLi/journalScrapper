@@ -87,7 +87,6 @@
 			}else{
 				$doi_number = 'N/A';
 			}
-
 			return $doi_number;
 		}
 
