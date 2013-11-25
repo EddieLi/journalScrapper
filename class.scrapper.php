@@ -26,7 +26,7 @@
 		//regular expression for scrapping doi numbers
 		private $doi_reg = "/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![&\'<>])\S)+)[0-9]+/";
 		//regular expression for scrapping words and frequencies
-		private $word_reg = "/([A-Za-z]+[^\[\"\'\,.:0-9\s\(\)\?\*\/\>\<|&+-;])/";
+		private $word_reg = "/[A-Za-z-]+[^\W]/";
 
 		function __construct($url){
 
